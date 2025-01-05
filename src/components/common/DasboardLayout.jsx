@@ -14,12 +14,12 @@ const DashboardLayout = () => {
       {/* Main Content */}
       <Box sx={{ display: "flex", flexGrow: 1, flexDirection: "row-reverse" }}>
         {/* Sidebar */}
-        <Sidebar />
 
         {/* Main Content */}
         <Container maxWidth="lg" sx={{ mt: 3, flexGrow: 1 }}>
           <Outlet />
         </Container>
+        <Sidebar />
       </Box>
 
       {/* Footer */}
