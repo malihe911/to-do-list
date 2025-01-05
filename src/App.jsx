@@ -1,35 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import { ThemeProvider, createTheme } from "@mui/material";
+import { RouterProvider } from "react-router-dom"; // اضافه کردن RouterProvider
+import router from "./Router/Router"; // فرض می‌کنیم که router در این فایل تعریف شده است
+
+// Custom theme for overriding default MUI font
+const theme = createTheme({
+  typography: {
+    fontFamily: "Yekan, Arial, sans-serif",
+  },
+});
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <ThemeProvider theme={theme}>
+      <RouterProvider router={router} /> {/* استفاده از RouterProvider */}
+    </ThemeProvider>
+  );
 }
 
-export default App
+export default App;
