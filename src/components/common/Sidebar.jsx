@@ -39,7 +39,7 @@ const Sidebar = () => {
           boxSizing: "border-box",
           borderLeft: "1px solid rgba(0, 0, 0, 0.12)", // اضافه کردن مرز راست
 
-          position: "relative", // استفاده از position relative
+          position: "fixed", // استفاده از position relative
         },
       }}
       PaperProps={{
