@@ -13,12 +13,16 @@ const Notifications = ({ notifications }) => {
     <Box
       sx={{
         width: "100%",
-        maxHeight: "300px", // ارتفاع محدود برای اسکرول
+        maxHeight: "300px",
         overflowY: "auto",
         bgcolor: "background.paper",
         borderRadius: 2,
         boxShadow: 3,
         p: 2,
+        direction: "ltr", // جهت را چپ به راست تنظیم کنید
+        "&::-webkit-scrollbar": {
+          position: "ralative",
+        },
       }}
     >
       <Typography variant="h6" gutterBottom>

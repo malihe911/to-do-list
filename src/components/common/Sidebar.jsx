@@ -21,8 +21,8 @@ const Sidebar = () => {
 
   const menuItems = [
     { text: "داشبورد اصلی", icon: <DashboardIcon />, path: "/" },
-    { text: "کانبان برد", icon: <AssignmentIcon />, path: "/kanban-board" },
-    { text: "مدیریت کارگاه‌ها", icon: <BuildIcon />, path: "/workshops" },
+    { text: "کانبان برد", icon: <AssignmentIcon />, path: "/kanban" },
+    { text: "مدیریت کارگاه‌ها", icon: <BuildIcon />, path: "/workshop" },
     { text: "تقویم من", icon: <CalendarTodayIcon />, path: "/my-calendar" },
     { text: "پروژه‌ها", icon: <ProjectIcon />, path: "/projects" },
     { text: "تنظیمات", icon: <SettingsIcon />, path: "/settings" },
