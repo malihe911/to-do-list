@@ -37,7 +37,7 @@ const Sidebar = () => {
         [`& .MuiDrawer-paper`]: {
           width: 240,
           boxSizing: "border-box",
-          borderLeft: "1px solid rgba(0, 0, 0, 0.12)", // اضافه کردن مرز راست
+          borderLeft: "1px solid rgba(0, 0, 0, 0.12)",
 
           position: "fixed", // استفاده از position relative
         },

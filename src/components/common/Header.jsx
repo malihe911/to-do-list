@@ -27,7 +27,7 @@ const DashboardHeader = () => {
       <Toolbar>
         {/* Dashboard Name */}
         <Typography variant="h6" sx={{ flexGrow: 1, fontWeight: "bold" }}>
-          Dashboard
+          SprintHub
         </Typography>
 
         {/* Search Bar */}

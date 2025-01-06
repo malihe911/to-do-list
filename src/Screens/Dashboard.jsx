@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Grid, Paper } from "@mui/material";
 import CalendarWithTasks from "../components/calendar";
-import TodoManager from "../components/TodoManager";
+import TodoManager from "../components/Todo/TodoManager";
 import ActiveWorkshops from "../components/charts/Barchart";
 import OpenTasks from "../components/charts/PieChart";
 import ProjectProgress from "../components/charts/LinearProgressBar";
